@@ -1,0 +1,8 @@
+FROM alpine:latest
+
+RUN apk update && \
+    apk add --no-cache docker && \
+    rm -rf /var/cache/apk/*
+
+CMD ["sh"]
+
